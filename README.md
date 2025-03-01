@@ -29,6 +29,7 @@ cd folder-fort-sync
 ```
 **🔴[YOU CAN ALSO DOWNLOAD THE CODE AS ZIP INSTEAD OF CLONING]**
 
+
 ### 3️⃣ Run the App
 ```sh
 python main.py
