@@ -22,17 +22,16 @@ Make sure you have **Python 3.9+** installed. Then, install the required package
 pip install customtkinter requests humanize keyring
 ```
 
-### 2️⃣ Clone the Repository
+### 2️⃣ Download the latest release
 ```sh
-git clone https://github.com/myusername/folder-fort-sync.git
-cd folder-fort-sync
+https://github.com/MridulParth/FolderFortSync/releases/tag/1.0
 ```
-**🔴[YOU CAN ALSO DOWNLOAD THE CODE AS ZIP INSTEAD OF CLONING]**
+**🔴[YOU CAN ALSO CLONE THE REPOSITORY]**
 
 
 ### 3️⃣ Run the App
 ```sh
-python main.py
+python sync_app.py
 ```
 
 ## 🏗️ Project Structure
@@ -47,7 +46,7 @@ python main.py
 ```
 
 ## 📝 Usage
-1. **Enter your API Token** and save it for quick access.
+1. **Enter your API Token** and save it for quick access. [It will be stored locally in an encrypted way]
 2. **Select a local folder** containing the files/folders you want to upload.
 3. **Choose a cloud destination** using the dropdown menu to select your destination folder.
 4. **Click Start** to begin the sync process.
