@@ -2,7 +2,7 @@
 
 ![Folder Fort Sync UI](screenshot.png)
 
-A simple yet powerful tool to sync your files securely from your PC to **FolderFort Cloud**. Built with **Python** and **CustomTkinter**, it provides an intuitive interface to manage and sync files effortlessly.
+A simple and feature rich tool to sync your files and folders securely from your PC to **FolderFort Cloud**. Built with **Python** and **CustomTkinter**, it provides minimal dark themed interface to manage and sync files effortlessly.
 
 ## 🚀 Features
 - **Save API Token** 🔑 – Save and reuse API credentials.
