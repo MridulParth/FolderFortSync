@@ -1,2 +1,81 @@
-# FolderFortSync
-A simple and efficient GUI-based file synchronization tool for FolderFort Cloud. Supports one-by-one file uploads, automatic folder creation, logging, and retrying failed uploads. Built with CustomTkinter for a sleek UI. 
+# Folder Fort Sync
+
+![Folder Fort Sync UI](screenshot.png)
+
+A simple yet powerful tool to sync your files securely from your PC to **FolderFort Cloud**. Built with **Python** and **CustomTkinter**, it provides an intuitive interface to manage and sync files effortlessly.
+
+## 🚀 Features
+- **Save API Token** 🔑 – Save and reuse API credentials.
+- **Browse Local Folder** 📂 – Easily select the folder to sync.
+- **Choose Cloud Destination** ☁️ – Pick where your files should be stored.
+- **Start, Pause, Resume, Stop** ⏯️ – Full control over your sync process.
+- **Retry Failed Uploads** 🔄 – Automatically retry failed transfers.
+- **Real-time Logs & Progress Bar** 📊 – Keep track of upload status.
+- **Dark Mode UI** 🌙 – Sleek, modern, and easy on the eyes.
+
+## 🛠️ Installation
+
+### 1️⃣ Install Dependencies
+Make sure you have **Python 3.9+** installed. Then, install the required packages:
+
+```sh
+pip install customtkinter requests humanize keyring
+```
+
+### 2️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/folder-fort-sync.git
+cd folder-fort-sync
+```
+
+### 3️⃣ Run the App
+```sh
+python main.py
+```
+
+## 🏗️ Project Structure
+```
+📁 folder-fort-sync/
+├── main.py                # Main application file
+├── file_uploader.py       # Handles file uploads
+├── folder_manager.py      # Manages folder operations
+├── ui_components.py       # UI elements
+├── assets/                # Store icons, themes, etc.
+└── README.md              # This file
+```
+
+## 📝 Usage
+1. **Enter your API Token** and save it for quick access.
+2. **Select a local folder** containing the files you want to upload.
+3. **Choose a cloud destination** using the dropdown menu.
+4. **Click Start** to begin the sync process.
+5. Use **Pause, Resume, or Stop** as needed.
+6. If some files fail, click **Retry Failed** to attempt re-upload.
+
+## 🔧 Dependencies Used
+```python
+import customtkinter as ctk
+from tkinter import filedialog, messagebox
+import threading
+import os
+from typing import Dict, List
+from pathlib import Path
+import time
+import requests
+import humanize
+import keyring
+import json
+from queue import Queue
+```
+
+## 📸 Screenshot
+To add a screenshot, place your image in the repo and reference it as:
+```md
+![Folder Fort Sync UI](screenshot.png)
+```
+
+## 💡 Contributing
+Pull requests are welcome! Open an issue if you find a bug or have a feature request.
+
+## 📜 License
+MIT License. Feel free to use and modify!
