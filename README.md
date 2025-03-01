@@ -36,18 +36,18 @@ python main.py
 ## 🏗️ Project Structure
 ```
 📁 folder-fort-sync/
-├── main.py                # Main application file
+├── sync_app.py            # Main application file (RUN THIS)
 ├── file_uploader.py       # Handles file uploads
 ├── folder_manager.py      # Manages folder operations
 ├── ui_components.py       # UI elements
-├── assets/                # Store icons, themes, etc.
+├── icon.ico               # Icon file of the app
 └── README.md              # This file
 ```
 
 ## 📝 Usage
 1. **Enter your API Token** and save it for quick access.
-2. **Select a local folder** containing the files you want to upload.
-3. **Choose a cloud destination** using the dropdown menu.
+2. **Select a local folder** containing the files/folders you want to upload.
+3. **Choose a cloud destination** using the dropdown menu to select your destination folder.
 4. **Click Start** to begin the sync process.
 5. Use **Pause, Resume, or Stop** as needed.
 6. If some files fail, click **Retry Failed** to attempt re-upload.
