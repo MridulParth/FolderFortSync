@@ -1,3 +1,4 @@
+# RUN THIS FILE (THIS IS THE MAIN.PY FILE)
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 import threading
