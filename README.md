@@ -24,7 +24,7 @@ pip install customtkinter requests humanize keyring
 
 ### 2️⃣ Download the latest release
 Download the latest code in a zip file from:
-**A. Releases Tag (1.0)**
+**A. Releases Tag (1.0)**  **OR**  
 **B. Code Button (As a Zip File)**
 
 **🔴[YOU CAN ALSO CLONE THE REPOSITORY]**
