@@ -24,14 +24,14 @@ pip install customtkinter requests humanize keyring
 
 ### 2️⃣ Download the latest release
 Download the latest code in a zip file from:
-# Releases Tag (1.0)
-# Code Button (As a Zip File)
+**A. Releases Tag (1.0)**
+**B. Code Button (As a Zip File)**
 
 **🔴[YOU CAN ALSO CLONE THE REPOSITORY]**
 
 
 ### 3️⃣ Run the App
-Open the Folder and right click to open in terminal then paste the following command:
+Extract the Zip file and open the Folder. Then right click in the folder and select open in terminal then paste the following command:
 ```sh
 python sync_app.py
 ```
