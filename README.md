@@ -23,9 +23,8 @@ pip install customtkinter requests humanize keyring
 ```
 
 ### 2️⃣ Download the latest release
-```sh
-https://github.com/MridulParth/FolderFortSync/releases/tag/1.0
-```
+Download the latest code in a zip file from (A) Releases Tag (B) Code (As a Zip File)
+
 **🔴[YOU CAN ALSO CLONE THE REPOSITORY]**
 
 
