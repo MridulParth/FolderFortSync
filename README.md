@@ -24,9 +24,10 @@ pip install customtkinter requests humanize keyring
 
 ### 2️⃣ Clone the Repository
 ```sh
-git clone https://github.com/yourusername/folder-fort-sync.git
+git clone https://github.com/myusername/folder-fort-sync.git
 cd folder-fort-sync
 ```
+**🔴[YOU CAN ALSO DOWNLOAD THE CODE AS ZIP INSTEAD OF CLONING]**
 
 ### 3️⃣ Run the App
 ```sh
@@ -66,12 +67,6 @@ import humanize
 import keyring
 import json
 from queue import Queue
-```
-
-## 📸 Screenshot
-To add a screenshot, place your image in the repo and reference it as:
-```md
-![Folder Fort Sync UI](screenshot.png)
 ```
 
 ## 💡 Contributing
