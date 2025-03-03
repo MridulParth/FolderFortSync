@@ -1929,3 +1929,4 @@ class FolderFortSync:
 if __name__ == "__main__":
     app = FolderFortSync()
     app.run()
+    
