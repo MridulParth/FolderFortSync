@@ -2108,3 +2108,4 @@ def _fade_in_reset_button(self):
                 fg_color=ThemeColors.ACCENT,
                 text_color=ThemeColors.TEXT_PRIMARY
             )
+            
