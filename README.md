@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="screenshot.png" alt="Folder Fort Sync" width="700">
+  <img alt="Folder Fort Sync" width="700">
 </p>
 
 <h1 align="center">Folder Fort Sync</h1>
