@@ -188,3 +188,4 @@ class FolderManager:
         if success and isinstance(data, dict):
             return data.get("path", "")
         return ""
+        
