@@ -1,79 +1,190 @@
-# Folder Fort Sync
 
-![Folder Fort Sync UI](screenshot.png)
+<p align="center">
+  <img src="screenshot.png" alt="Folder Fort Sync" width="700">
+</p>
 
-A simple and feature rich tool to sync your files and folders securely from your PC to **FolderFort Cloud**. Built with **Python** and **CustomTkinter**, it provides minimal dark themed interface to manage and sync files effortlessly.
+<h1 align="center">Folder Fort Sync</h1>
 
-## 🚀 Features
-- **Save API Token** 🔑 – Save and reuse API credentials.
-- **Browse Local Folder** 📂 – Easily select the folder to sync.
-- **Choose Cloud Destination** ☁️ – Pick where your files should be stored.
-- **Start, Pause, Resume, Stop** ⏯️ – Full control over your sync process.
-- **Retry Failed Uploads** 🔄 – Automatically retry failed transfers.
-- **Real-time Logs & Progress Bar** 📊 – Keep track of upload status.
-- **Dark Mode UI** 🌙 – Sleek, modern, and easy on the eyes.
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#project-structure">Project Structure</a> •
+  <a href="#dependencies">Dependencies</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
 
-## 🛠️ Installation
+<p align="center">
+  A powerful yet simple tool to sync your files and folders securely from your PC to <strong>FolderFort Cloud</strong>. 
+  Built with <strong>Python</strong> and <strong>CustomTkinter</strong>, it provides a sleek dark-themed interface for 
+  effortless file management and synchronization.
+</p>
 
-### 1️⃣ Install Dependencies
-Make sure you have **Python 3.9+** installed. Then, install the required packages:
+## ✨ Features
 
-```sh
-pip install customtkinter requests humanize keyring
-```
+<table>
+  <tr>
+    <td><b>1. 🔑 Secure Authentication</b></td>
+    <td>Save and securely store API credentials for quick access</td>
+  </tr>
+  <tr>
+    <td><b>2. 📂 Intuitive File Selection</b></td>
+    <td>Browse and select local folders with a familiar interface</td>
+  </tr>
+  <tr>
+    <td><b>3. ☁️ Cloud Integration</b></td>
+    <td>Seamlessly connect to your FolderFort Cloud storage</td>
+  </tr>
+  <tr>
+    <td><b>4. ⏯️ Complete Sync Controls</b></td>
+    <td>Start, pause, resume, and stop uploads with visual animations</td>
+  </tr>
+  <tr>
+    <td><b>5. 🔄 Auto-Retry</b></td>
+    <td>Automatically retry failed transfers with detailed error reporting</td>
+  </tr>
+  <tr>
+    <td><b>6. 📊 Real-time Tracking</b></td>
+    <td>Monitor progress with detailed logs and animated progress bar</td>
+  </tr>
+  <tr>
+    <td><b>7. 🌙 Modern Dark UI</b></td>
+    <td>Sleek, eye-friendly interface designed for extended use</td>
+  </tr>
+</table>
 
-### 2️⃣ Download the latest release
-Download the latest code in a zip file from:
-**A. Releases Tag (1.0)**  **OR**  
-**B. Code Button (As a Zip File)**
+## 🚀 Installation
 
-**🔴[YOU CAN ALSO CLONE THE REPOSITORY]**
+### Prerequisites
+
+- Python 3.9 or higher
+- Internet connection for API access
+- FolderFort account with API token
+
+### Option 1: Download Release (Recommended)
+
+<details open>
+<summary><b>Download and Run the Application</b></summary>
+
+1. **Download the latest release**:
+   - Visit the [Releases page](https://github.com/MridulParth/FolderFortSync/releases)
+   - Download the latest ZIP file (`FolderFortSync-v1.1.zip`)
+
+2. **Extract the downloaded ZIP file** to a location of your choice
+
+3. **Install required packages**:
+   ```bash
+   pip install customtkinter requests humanize keyring
+   ```
+
+4. **Launch the application**:
+   ```bash
+   python sync_app.py
+   ```
+</details>
+
+### Option 2: Clone the Repository
+
+<details>
+<summary><b>For Developers and Contributors</b></summary>
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MridulParth/FolderFortSync.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd FolderFortSync
+   ```
+
+3. **Install required packages**:
+   ```bash
+   pip install customtkinter requests humanize keyring
+   ```
+
+4. **Launch the application**:
+   ```bash
+   python sync_app.py
+   ```
+</details>
 
 
-### 3️⃣ Run the App
-Extract the Zip file and open the Folder. Then right click in the folder and select open in terminal then paste the following command:
-```sh
-python sync_app.py
-```
-**🔴[YOU CAN ALSO RUN THE SYNC_APP.PY FILE WITH A CODE EDITOR LIKE VS-CODE/PYCHARM]**
+
+## 🎮 Usage
+
+<p align="center">
+  <img src="screenshot.png" alt="Usage Flow" width="600">
+</p>
+
+1. **Authentication**:
+   - Enter your API Token in the designated field
+   - Click "Save Token" to securely store it for future sessions
+
+2. **Select Source**:
+   - Click "Browse" to select the local folder containing files you want to upload
+   - All files and subfolders will be included in the sync
+
+3. **Choose Destination**:
+   - Click "Refresh" to load available cloud folders
+   - Select your destination folder from the dropdown menu
+
+4. **Start Sync Process**:
+   - Click "Start" to begin uploading your files
+   - The progress bar will show real-time status
+
+5. **Control Options**:
+   - **Pause**: Temporarily halt uploads (in-progress transfers will complete)
+   - **Resume**: Continue paused uploads
+   - **Stop**: Cancel the entire sync operation
+   - **Retry Failed**: Attempt to re-upload any failed files
+
+6. **Monitor Progress**:
+   - View detailed logs in the bottom panel
+   - Check upload speed and estimated time remaining
 
 ## 🏗️ Project Structure
-```
-📁 folder-fort-sync/
-├── sync_app.py            # Main application file (RUN THIS)
-├── file_uploader.py       # Handles file uploads
-├── folder_manager.py      # Manages folder operations
-├── ui_components.py       # UI elements
-├── icon.ico               # Icon file of the app
-└── README.md              # This file
-```
 
-## 📝 Usage
-1. **Enter your API Token** and save it for quick access. [It will be stored locally in an encrypted way]
-2. **Select a local folder** containing the files/folders you want to upload.
-3. **Choose a cloud destination** using the dropdown menu to select your destination folder.
-4. **Click Start** to begin the sync process.
-5. Use **Pause, Resume, or Stop** as needed.
-6. If some files fail, click **Retry Failed** to attempt re-upload.
-
-## 🔧 Dependencies Used
-```python
-import customtkinter as ctk
-from tkinter import filedialog, messagebox
-import threading
-import os
-from typing import Dict, List
-from pathlib import Path
-import time
-import requests
-import humanize
-import keyring
-import json
-from queue import Queue
+```
+📁 FolderFortSync/
+├── sync_app.py            # Main application entry point
+├── file_uploader.py       # File upload and transfer management
+├── folder_manager.py      # Cloud folder operations and structure
+├── ui_components.py       # UI elements and visual components
+├── icon.ico               # Application icon
+└── README.md              # Documentation
 ```
 
-## 💡 Contributing
-Pull requests are welcome! Open an issue if you find a bug or have a feature request.
+## 📦 Dependencies
+
+- **CustomTkinter**: Modern UI toolkit for building the interface
+- **Requests**: HTTP library for API communication
+- **Humanize**: Human-readable file sizes and timestamps
+- **Keyring**: Secure credential storage for API tokens
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
+3. **Commit your changes**: `git commit -m 'Add some amazing feature'`
+4. **Push to the branch**: `git push origin feature/amazing-feature`
+5. **Open a Pull Request**
+
+Please ensure your code follows the project's style guidelines and includes appropriate tests.
 
 ## 📜 License
-MIT License. Feel free to use and modify!
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💬 Support
+
+If you encounter any issues or have questions, please [open an issue](https://github.com/MridulParth/FolderFortSync/issues) on GitHub.
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/MridulParth">Kizzieee</a>
+</p>
