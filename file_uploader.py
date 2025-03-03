@@ -673,3 +673,4 @@ class FileUploader:
         requests.adapters.DEFAULT_TIMEOUT = old_timeout
 
         print("Upload stopped successfully")
+        
